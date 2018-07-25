@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <Description>Creates a list of all the unique words in a document.</Description>
+    <Copyright>Detant-Inc.com  2018</Copyright>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>StrongKey_01.pfx</AssemblyOriginatorKeyFile>
+    <ApplicationIcon>ListUniqueWords.ico</ApplicationIcon>
+    <Authors>Detant-Inc.</Authors>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>bin\Debug\netcoreapp2.0\ListUniqueWords.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="ParseCore - Copy.cs" />
+    <Compile Remove="ParseFile - Copy.cs" />
+    <Compile Remove="ParseText - Copy.cs" />
+    <Compile Remove="Program - Copy.cs" />
+  </ItemGroup>
+
+</Project>
